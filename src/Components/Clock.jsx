@@ -6,7 +6,7 @@ export default class Clock extends Component {
         super(props);
         this.state = {
             day: new Date(),
-            hh: new Date().getHours * 30,
+            hh: new Date().getHours() * 30,
             mm: new Date().getMinutes() * 6,
             ss: new Date().getSeconds() * 6
         }
@@ -45,15 +45,13 @@ export default class Clock extends Component {
     clock() {
         this.setState({
             day: new Date(),
-            hh: new Date().getHours * 30,
+            hh: new Date().getHours() * 30,
             mm: new Date().getMinutes() * 6,
             ss: new Date().getSeconds() * 6
         })
     }
 
     ticker() {
-        const deg = 6;
-
         const hr = document.querySelector('#hr');
         const mn = document.querySelector('#mn');
         const sc = document.querySelector('#sc');
