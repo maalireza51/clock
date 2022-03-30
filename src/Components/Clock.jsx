@@ -5,10 +5,15 @@ export default class Clock extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            date: new Date()
+            day: new Date(),
+            hh: new Date().getHours * 30,
+            mm: new Date().getMinutes() * 6,
+            ss: new Date().getSeconds() * 6
         }
-        this.toggleClass = this.toggleClass.bind(this);
-        setInterval(() => this.clock.bind(this));
+        const intervalId = setInterval(() => {
+            this.clock();
+            this.ticker();
+        }, 1000);
     }
 
     render() {
@@ -26,17 +31,11 @@ export default class Clock extends Component {
                     </div>
                 </div>
                 <div className="toggleClass" onClick={this.toggleClass}></div>
+                <div className='digitalclock'> it is {this.state.day.toLocaleTimeString()}</div>
             </div>
         )
     }
 
-    tick() {
-        this.setState({
-            date: new Date()
-        })
-    }
-
-    // For toggle button;
     toggleClass() {
         const body = document.querySelector('body');
         body.classList.toggle('light');
@@ -44,34 +43,23 @@ export default class Clock extends Component {
     }
 
     clock() {
-        // for time;
+        this.setState({
+            day: new Date(),
+            hh: new Date().getHours * 30,
+            mm: new Date().getMinutes() * 6,
+            ss: new Date().getSeconds() * 6
+        })
+    }
+
+    ticker() {
         const deg = 6;
-        // 360 / (12 * 5);
 
         const hr = document.querySelector('#hr');
         const mn = document.querySelector('#mn');
         const sc = document.querySelector('#sc');
 
-
-        setInterval(() => {
-
-            let day = new Date();
-            let hh = day.getHours() * 30;
-            let mm = day.getMinutes() * deg;
-            let ss = day.getSeconds() * deg;
-            let msec = day.getMilliseconds();
-
-
-            // VERY IMPORTANT STEP:
-
-            hr.style.transform = `rotateZ(${(hh) + (mm / 12)}deg)`;
-            mn.style.transform = `rotateZ(${mm}deg)`;
-            sc.style.transform = `rotateZ(${ss}deg)`;
-
-            // gives the smooth transitioning effect, but there's a bug here!
-            // sc.style.transition = `1s`;
-
-
-        })
+        hr.style.transform = `rotateZ(${(this.state.hh) + (this.state.mm / 12)}deg)`;
+        mn.style.transform = `rotateZ(${this.state.mm}deg)`;
+        sc.style.transform = `rotateZ(${this.state.ss}deg)`;
     }
 }

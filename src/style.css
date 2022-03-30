@@ -32,12 +32,13 @@ body.light {
     background: url(../public/clock.png);
     background-size: cover;
     border: 4px;
-    /* box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5); */
-    box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
-                inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),
-                0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
-                inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
+    /*box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5);
+    */box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),                inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),                0em 1.2em 1.2em rgba(0, 0, 0, 0.3),                inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 body.light .clock {
@@ -102,10 +103,13 @@ body.light .clock:before {
 .hr, .mn, .sc {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    position: absolute;
+    /*align-items: center;
+    */position: absolute;
     border-radius: 50%;
-    
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 
 
@@ -116,8 +120,11 @@ body.light .clock:before {
     height: 80px;
     background: #f81460;
     z-index: 10;
-    /* z-index least */
-    border-radius: 2.8px;
+    /*z-indexleast*/border-radius: 2.8px;
+    -webkit-border-radius: 2.8px;
+    -moz-border-radius: 2.8px;
+    -ms-border-radius: 2.8px;
+    -o-border-radius: 2.8px;
 }
 
 .mn:before {
@@ -184,4 +191,19 @@ body.light .toggleClass {
 body.light .toggleClass:before {
     content: 'Dark Mode';
     white-space: nowrap;
+}
+
+.digitalclock{
+    position: absolute;
+    top: 35px;
+    left:45px;
+    margin: 2px;
+    font-size: 18px;
+    color: #d1dae3;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    align-items: center;
+}
+body.light .digitalclock{
+    color: #091921;
 }
