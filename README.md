@@ -6,10 +6,10 @@
 </p>
 
 <p>screenshots</p>
-<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/Screenshot1.png" width="300px"/></br>
-<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/Screenshot2.png" width="300px"/></br>
-<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/Screenshot3.png" width="300px"/>
-<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/Screenshot4.png" width="300px"/>
+<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/screenshot1.png" width="300px"/></br>
+<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/screenshot2.png" width="300px"/></br>
+<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/screenshot3.png" width="300px"/>
+<img src="https://raw.githubusercontent.com/maalireza51/clock/master/public/screenshot4.png" width="300px"/>
 </br></br>
 
 <p>Follow me on:</p>
