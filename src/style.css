@@ -29,7 +29,7 @@ body.light {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../public/clock.png);
+    background: url('https://raw.githubusercontent.com/maalireza51/clock/master/public/clock.png');
     background-size: cover;
     border: 4px;
     /*box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5);
