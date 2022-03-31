@@ -10,10 +10,11 @@ export default class Clock extends Component {
             mm: new Date().getMinutes() * 6,
             ss: new Date().getSeconds() * 6
         }
-        const intervalId = setInterval(() => {
+        setInterval(() => {
             this.clock();
             this.ticker();
         }, 1000);
+        this.toggleClass = this.toggleClass.bind(this);
     }
 
     render() {
