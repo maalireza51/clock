@@ -24,22 +24,22 @@ body.light {
 
 
 .clock {
-    width: 375px;
-    height: 375px;
+    width: 345px;
+    height: 345px;
     display: flex;
-    padding: 0 10px;
     justify-content: center;
     align-items: center;
-    background: url('https://raw.githubusercontent.com/maalireza51/clock/master/public/clock.png');
+    background:
+    url('https://raw.githubusercontent.com/maalireza51/clock/master/public/clock.png');
     background-size: cover;
     border: 4px;
     /*box-shadow: 15px 15px 15px rgba(255, 255, 255, 0.5);
     */box-shadow: 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),                inset 0em -1.2em 1.2em rgba(255, 255, 255, 0.06),                0em 1.2em 1.2em rgba(0, 0, 0, 0.3),                inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 body.light .clock {

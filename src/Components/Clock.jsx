@@ -19,7 +19,7 @@ export default class Clock extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <div className='clock'>
                     <div className="hour">
                         <div className="hr" id="hr"></div>
