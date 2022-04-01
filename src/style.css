@@ -27,6 +27,7 @@ body.light {
     width: 375px;
     height: 375px;
     display: flex;
+    padding: 0 10px;
     justify-content: center;
     align-items: center;
     background: url('https://raw.githubusercontent.com/maalireza51/clock/master/public/clock.png');
